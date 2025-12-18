@@ -99,7 +99,9 @@ These functions are defined in the root of the importable object and are used to
 ```
 ### Tlon Messenger API
 
-These functions are used for interacting with Tlon Messenger app suite. `id: string` in DM-related functions is either a `@p` like `~sampel-palnet` or a groupchat ID which can be found in the URL of the groupchat. `Nest` string is the unique identifier of a group chat and can be derived from the chat's URL, e.g. in `https://example.com/apps/groups/groups/~halbex-palheb/uf-public/channels/chat/~halbex-palheb/general-4066` the `Nest` is `chat/~halbex-palheb/general-4066`. `Flag` group is a unique identifier of a group, which consists of a group host and a group name, and in the above case it's `~halbex-palheb/uf-public`.
+These functions are used for interacting with Tlon Messenger app suite. `id: string` in DM-related functions is either a `@p` like `~sampel-palnet` or a groupchat ID which can be found in the URL of the groupchat. `Nest` string is the unique identifier of a group chat and can be derived from the chat's URL, e.g. in `https://example.com/apps/groups/group/~halbex-palheb%2Fuf-public/channel/diary%2F~sicdev-pilnup%2Fvipr7b5` the `Nest` is `diary/~sicdev-pilnup/vipr7b5` (`%2F` stands for `/` in URL encoding).
+
+`Flag` is a unique identifier of a group, which consists of a group host and a group name, and in the above case it's `~halbex-palheb/uf-public`.
 
 #### Type definitions
 
